@@ -280,6 +280,10 @@ helper.maybe_download_pretrained_vgg(data_dir)
 learning_rate = tf.placeholder(tf.float32, name='learning_rate')
 correct_label = tf.placeholder(tf.int32, [None, None, None, num_classes], name='correct_label')
 
+# No GPU was available to me, so it was very time consuming to test various network hyper-parameters. 
+# Learning rate, batch_size, epochs and the amount of regulization was found in submissions from
+# other udacity submission.
+
 batch_size = 8
 epochs = 20
 
